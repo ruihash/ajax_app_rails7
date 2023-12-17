@@ -61,5 +61,5 @@ production:
  # database: ajax_app_rails7_2_production
   #username: ajax_app_rails7_2
  # password: <%= ENV["AJAX_APP_RAILS7_2_DATABASE_PASSWORD"] %>
- adapter: postgresql
- url: <%= ENV['DATABASE_URL'] %>
+  adapter: postgresql
+  url: <%= ENV['DATABASE_URL'] %>

@@ -32,22 +32,22 @@ function post (){
       return null;
     }/*エラーが出た際にエラーかどうかどうか分かるようアラームを設定 */
     const list =document.getElementById("list")
-    const formTExt = document.getElementById("content");
-   /*
-    const item = XHR.response.post;
-    const html = `
-    <div class="post">
-      <div class="post-tate">
+    const formText = document.getElementById("content");
+        /*
+           const item = XHR.response.post;
+       const html = `
+        <div class="post">
+        <div class="post-tate">
         投稿日時:${item.created_at}
-      </div>
+        </div>
       <div class="post-content">
         ${item.content}
       </div>
-    </div>`;
-   list.insertAdjacentHTML("afterend", html)
-   */
-  list.insertAdjacentHTML("afterend", buildHTML(XHR));
-   formText.value = "";
+     </div>`;
+      list.insertAdjacentHTML("afterend", html)
+       */
+    list.insertAdjacentHTML("afterend", buildHTML(XHR));
+    formText.value = "";
    };
   });
 };
